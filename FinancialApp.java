@@ -1,16 +1,16 @@
-package financial;
+import financial.*;
 
 public class FinancialApp {
     public static void main(String[] args) {
-        // Create a SavingsAccount object
+        // Object of SavingsAccount
         SavingsAccount account = new SavingsAccount();
 
-        // Deposit and withdraw from the account
+        // Deposit & withdraw from the account
         account.deposit(1000);
         account.withdraw(500);
 
-        // Check the account balance
+        // Checking remaining balance
         double balance = account.checkBalance();
-        System.out.println("Current balance: $" + balance);
+        System.out.println("Current balance is: $" + balance);
     }
 }
